@@ -11,23 +11,30 @@
 <meta name="author" content="Muhammad Zainuddin">
 
 <style type="text/css">
-table { border-collapse: collapse; }
-th, td { border: 1px solid #000; padding: 4px; }
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #000;
+  padding: 4px;
+}
+
+th {
+  background-color: #CCCCCC;
+}
+
 @media (max-width:600px){
-  table { display:block; overflow-x:auto; }
+  table {
+    display: block;
+    overflow-x: auto;
+  }
 }
-a:link {
-	color: #0000FF;
-}
-a:visited {
-	color: #0000FF;
-}
-a:hover {
-	color: #FF0000;
-}
-a:active {
-	color: #0000FF;
-}
+
+a:link { color: #0000FF; }
+a:visited { color: #0000FF; }
+a:hover { color: #FF0000; }
+a:active { color: #0000FF; }
 </style>
 
 <script type="text/javascript">
@@ -49,18 +56,17 @@ function render(){
   var search = document.getElementById("search").value.toLowerCase();
 
   var list = products.filter(function(p){
-    var cat = currentCategory=="all" || p.category==currentCategory;
-    var sea = p.software.toLowerCase().indexOf(search)>-1 ||
-              p.support.toLowerCase().indexOf(search)>-1;
+    var cat = (currentCategory === "all" || p.category === currentCategory);
+    var sea = p.software.toLowerCase().indexOf(search) > -1 ||
+              p.support.toLowerCase().indexOf(search) > -1;
     return cat && sea;
   });
 
-  // Urut default A-Z berdasarkan software
   list.sort(function(a,b){
     return a.software.localeCompare(b.software);
   });
 
-  if(list.length===0){
+  if(list.length === 0){
     var tr = document.createElement("tr");
     var td = document.createElement("td");
     td.setAttribute("colspan","4");
@@ -70,7 +76,7 @@ function render(){
     return;
   }
 
-  for(var i=0;i<list.length;i++){
+  for(var i = 0; i < list.length; i++){
     var tr = document.createElement("tr");
 
     var td1 = document.createElement("td");
@@ -84,7 +90,7 @@ function render(){
 
     var td4 = document.createElement("td");
     var a = document.createElement("a");
-    a.href = list[i].download; // tetap sesuai JSON
+    a.href = list[i].download;
     a.appendChild(document.createTextNode("Download"));
     td4.appendChild(a);
 
@@ -99,14 +105,14 @@ function render(){
 
 function load(){
   var xhr = new XMLHttpRequest();
-  xhr.open("GET","data.json?"+new Date().getTime(),true);
+  xhr.open("GET","data.json?" + new Date().getTime(), true);
   xhr.onreadystatechange = function(){
-    if(xhr.readyState==4 && xhr.status==200){
+    if(xhr.readyState === 4 && xhr.status === 200){
       products = JSON.parse(xhr.responseText);
       render();
     }
   };
-  xhr.send();
+  xhr.send(null);
 }
 //-->
 </script>
@@ -115,7 +121,7 @@ function load(){
 
 <body onload="load()">
 
-<h1>ZainSoft - Software Directory </h1>
+<h1>ZainSoft - Software Directory</h1>
 <p>Get free Utility, Editor, Printer, Disk and Office Software.</p>
 
 <hr>
@@ -129,18 +135,18 @@ Search:
 
 <p>
 Category:
-<a href="#" onclick="currentCategory='all';render()">All</a> |
-<a href="#" onclick="currentCategory='utility';render()">Utility</a> |
-<a href="#" onclick="currentCategory='editor';render()">Editor</a> |
-<a href="#" onclick="currentCategory='printer';render()">Printer</a> |
-<a href="#" onclick="currentCategory='disk';render()">Disk</a> |
-<a href="#" onclick="currentCategory='office';render()">Office</a>
+<a href="#" onclick="currentCategory='all';render();return false;">All</a> |
+<a href="#" onclick="currentCategory='utility';render();return false;">Utility</a> |
+<a href="#" onclick="currentCategory='editor';render();return false;">Editor</a> |
+<a href="#" onclick="currentCategory='printer';render();return false;">Printer</a> |
+<a href="#" onclick="currentCategory='disk';render();return false;">Disk</a> |
+<a href="#" onclick="currentCategory='office';render();return false;">Office</a>
 </p>
 
 <table>
 <tr>
   <th>Programs</th>
-  <th>Requirements</th>
+  <th>Description</th>
   <th>Size</th>
   <th>Download</th>
 </tr>
@@ -162,9 +168,14 @@ document.write(new Date().toLocaleString());
 
 <p><small>author : Muhammad Zainuddin</small></p>
 <p><small><a href="mailto:mrzainsoft@proton.me">mrzainsoft@proton.me</a></small></p>
+
 <p>
-  <a href="https://validator.w3.org/check?uri=referer"><img
-    src="https://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Strict" height="31" width="88"></a>
+<a href="https://validator.w3.org/check?uri=referer">
+<img src="https://www.w3.org/Icons/valid-html401"
+     alt="Valid HTML 4.01 Strict"
+     width="88"
+     height="31">
+</a>
 </p>
 
 </body>
