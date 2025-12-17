@@ -131,5 +131,12 @@
     "size": "2.7 MB",
     "download": "/cgi/bin/ESPSON_L110.zip",
     "category": "printer"
+  },
+  {
+    "software": "RUFUS 4.11",
+    "support": "Bootable Tools",
+    "size": "1.8 MB",
+    "download": "/cgi/bin/rufus-4.11p.zip",
+    "category": "utility"
   }
 ]
