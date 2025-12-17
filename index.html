@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>ZainSoft Directory</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="ZainSoft - software download list">
+<meta name="author" content="Muhammad Zainuddin">
+
+<style type="text/css">
+table { border-collapse: collapse; }
+th, td { border: 1px solid #000; padding: 4px; }
+@media (max-width:600px){
+  table { display:block; overflow-x:auto; }
+}
+</style>
+
+<script type="text/javascript">
+<!--
+var products = [];
+var currentCategory = "all";
+
+function clearTable(){
+  var tbody = document.getElementById("data");
+  while(tbody.firstChild){
+    tbody.removeChild(tbody.firstChild);
+  }
+}
+
+function render(){
+  var tbody = document.getElementById("data");
+  clearTable();
+
+  var search = document.getElementById("search").value.toLowerCase();
+
+  var list = products.filter(function(p){
+    var cat = currentCategory=="all" || p.category==currentCategory;
+    var sea = p.software.toLowerCase().indexOf(search)>-1 ||
+              p.support.toLowerCase().indexOf(search)>-1;
+    return cat && sea;
+  });
+
+  // Urut default A-Z berdasarkan software
+  list.sort(function(a,b){
+    return a.software.localeCompare(b.software);
+  });
+
+  if(list.length===0){
+    var tr = document.createElement("tr");
+    var td = document.createElement("td");
+    td.setAttribute("colspan","4");
+    td.appendChild(document.createTextNode("No data"));
+    tr.appendChild(td);
+    tbody.appendChild(tr);
+    return;
+  }
+
+  for(var i=0;i<list.length;i++){
+    var tr = document.createElement("tr");
+
+    var td1 = document.createElement("td");
+    td1.appendChild(document.createTextNode(list[i].software));
+
+    var td2 = document.createElement("td");
+    td2.appendChild(document.createTextNode(list[i].support));
+
+    var td3 = document.createElement("td");
+    td3.appendChild(document.createTextNode(list[i].size));
+
+    var td4 = document.createElement("td");
+    var a = document.createElement("a");
+    a.href = list[i].download; // tetap sesuai JSON
+    a.appendChild(document.createTextNode("Download"));
+    td4.appendChild(a);
+
+    tr.appendChild(td1);
+    tr.appendChild(td2);
+    tr.appendChild(td3);
+    tr.appendChild(td4);
+
+    tbody.appendChild(tr);
+  }
+}
+
+function load(){
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET","data.json?"+new Date().getTime(),true);
+  xhr.onreadystatechange = function(){
+    if(xhr.readyState==4 && xhr.status==200){
+      products = JSON.parse(xhr.responseText);
+      render();
+    }
+  };
+  xhr.send();
+}
+//-->
+</script>
+
+</head>
+
+<body onload="load()">
+
+<h1>ZainSoft - Software Directory </h1>
+<p>Get free Utility, Editor, Printer, Disk and Office Software.</p>
+
+<hr>
+
+<form action="#">
+<p>
+Search:
+<input type="text" id="search" onkeyup="render()">
+</p>
+</form>
+
+<p>
+Category:
+<a href="#" onclick="currentCategory='all';render()">All</a> |
+<a href="#" onclick="currentCategory='utility';render()">Utility</a> |
+<a href="#" onclick="currentCategory='editor';render()">Editor</a> |
+<a href="#" onclick="currentCategory='printer';render()">Printer</a> |
+<a href="#" onclick="currentCategory='disk';render()">Disk</a> |
+<a href="#" onclick="currentCategory='office';render()">Office</a>
+</p>
+
+<table>
+<tr>
+  <th>Programs</th>
+  <th>Requirements</th>
+  <th>Size</th>
+  <th>Download</th>
+</tr>
+<tbody id="data">
+<tr>
+  <td colspan="4">Loading...</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Last update:
+<script type="text/javascript">
+<!--
+document.write(new Date().toLocaleString());
+//-->
+</script>
+</p>
+
+<p><small>author : Muhammad Zainuddin</small></p>
+<p>
+  <a href="https://validator.w3.org/check?uri=referer"><img
+    src="https://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Strict" height="31" width="88"></a>
+</p>
+
+</body>
+</html>

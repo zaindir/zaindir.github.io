@@ -1,0 +1,135 @@
+[
+  {
+    "software": "RESETTER EPSON L100",
+    "support": "Epson L100",
+    "size": "3.3 MB",
+    "download": "/cgi/bin/EPSON_L100.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L120/L121",
+    "support": "Epson L120 & L121",
+    "size": "783 KB",
+    "download": "/cgi/bin/EPSON_L120.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L210",
+    "support": "Epson L210",
+    "size": "1.2 MB",
+    "download": "/cgi/bin/EPSON_L210.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L220",
+    "support": "Epson L220",
+    "size": "2.7 MB",
+    "download": "/cgi/bin/EPSON_L220.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L310",
+    "support": "Epson L310",
+    "size": "2.7 MB",
+    "download": "/cgi/bin/EPSON_L310.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L360",
+    "support": "Epson L360",
+    "size": "2.7 MB",
+    "download": "/cgi/bin/EPSON_L360.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L380",
+    "support": "Epson L380",
+    "size": "1.6 MB",
+    "download": "/cgi/bin/EPSON_L380.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L385",
+    "support": "Epson L385",
+    "size": "1.5 MB",
+    "download": "/cgi/bin/EPSON_L385.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L565",
+    "support": "Epson L565",
+    "size": "2.7 MB",
+    "download": "/cgi/bin/EPSON_L565.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L1110",
+    "support": "Epson L1110",
+    "size": "5.7 MB",
+    "download": "/cgi/bin/EPSON_L1110.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L1210",
+    "support": "Epson L1210",
+    "size": "4.2 MB",
+    "download": "/cgi/bin/EPSON_L1210.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L1210/L3210/L3250/L3251/L3260/L5290",
+    "support": "L1210/L3210/L3250/L3251/L3260/L5290",
+    "size": "4.2 MB",
+    "download": "/cgi/bin/EPSON_L1210_L3210_L3250_L3251_L3260_L5290.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L1300",
+    "support": "Epson L1300",
+    "size": "2.2 MB",
+    "download": "/cgi/bin/EPSON_L1300.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L1390",
+    "support": "Epson L1390",
+    "size": "770 KB",
+    "download": "/cgi/bin/EPSON_L1390.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L3110/L3100/L3150/L3001",
+    "support": "L3110/L3100/L3150/L3001",
+    "size": "14 MB",
+    "download": "/cgi/bin/EPSON_L3110_L3100_L3150_L3001.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L4150",
+    "support": "Epson L4150",
+    "size": "5.9 MB",
+    "download": "/cgi/bin/EPSON_L4150.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L5190",
+    "support": "Epson L5190",
+    "size": "6 MB",
+    "download": "/cgi/bin/EPSON_L5190.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L5290",
+    "support": "Epson L5290",
+    "size": "4.2 MB",
+    "download": "/cgi/bin/EPSON_L5290.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER ESPSON L110",
+    "support": "Epson L110",
+    "size": "2.7 MB",
+    "download": "/cgi/bin/ESPSON_L110.zip",
+    "category": "printer"
+  }
+]
