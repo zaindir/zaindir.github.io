@@ -138,5 +138,117 @@
     "size": "1.8 MB",
     "download": "/cgi/bin/rufus-4.11p.zip",
     "category": "utility"
+  },
+  {
+    "software": "Office 2013 Home and Student",
+    "support": "Microsoft Office",
+    "size": "2.04 GB",
+    "download": "https://officeredir.microsoft.com/r/rlidO15C2RMediaDownload?p1=db&p2=en-us&p3=HomeStudentRetail",
+    "category": "office"
+  },
+  {
+    "software": "Office 2013 Home and Business",
+    "support": "Microsoft Office",
+    "size": "2.04 GB",
+    "download": "https://officeredir.microsoft.com/r/rlidO15C2RMediaDownload?p1=db&p2=en-us&p3=HomeBusinessRetail",
+    "category": "office"
+  },
+  {
+    "software": "Office 2013 Professional",
+    "support": "Microsoft Office",
+    "size": "2.04 GB",
+    "download": "https://officeredir.microsoft.com/r/rlidO15C2RMediaDownload?p1=db&p2=en-us&p3=ProfessionalRetail",
+    "category": "office"
+  },
+  {
+    "software": "Office 2013 Professional Plus",
+    "support": "Microsoft Office",
+    "size": "2.04 GB",
+    "download": "https://officeredir.microsoft.com/r/rlidO15C2RMediaDownload?p1=db&p2=en-us&p3=ProPlusRetail",
+    "category": "office"
+  },
+  {
+    "software": "Office 2016 Home and Student",
+    "support": "Microsoft Office",
+    "size": "4.13 GB",
+    "download": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/HomeStudentRetail.img",
+    "category": "office"
+  },
+  {
+    "software": "Office 2016 Home and Business",
+    "support": "Microsoft Office",
+    "size": "4.13 GB",
+    "download": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/HomeBusinessRetail.img",
+    "category": "office"
+  },
+  {
+    "software": "Office 2016 Professional",
+    "support": "Microsoft Office",
+    "size": "4.13 GB",
+    "download": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/ProfessionalRetail.img",
+    "category": "office"
+  },
+  {
+    "software": "Office 2016 Professional Plus",
+    "support": "Microsoft Office",
+    "size": "4.13 GB",
+    "download": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/ProPlusRetail.img",
+    "category": "office"
+  },
+  {
+    "software": "Office 2019 Home and Student",
+    "support": "Microsoft Office",
+    "size": "3.99 GB",
+    "download": "https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/HomeStudent2019Retail.img",
+    "category": "office"
+  },
+  {
+    "software": "Office 2019 Home and Business",
+    "support": "Microsoft Office",
+    "size": "3.99 GB",
+    "download": "https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/HomeBusiness2019Retail.img",
+    "category": "office"
+  },
+  {
+    "software": "Office 2019 Professional",
+    "support": "Microsoft Office",
+    "size": "3.99 GB",
+    "download": "https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/Professional2019Retail.img",
+    "category": "office"
+  },
+  {
+    "software": "Office 2019 Professional Plus",
+    "support": "Microsoft Office",
+    "size": "3.99 GB",
+    "download": "https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/ProPlus2019Retail.img",
+    "category": "office"
+  },
+  {
+    "software": "Office 2021 Home and Student",
+    "support": "Microsoft Office",
+    "size": "4.71 GB",
+    "download": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/HomeStudent2021Retail.img",
+    "category": "office"
+  },
+  {
+    "software": "Office 2021 Home and Business",
+    "support": "Microsoft Office",
+    "size": "4.71 GB",
+    "download": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/HomeBusiness2021Retail.img",
+    "category": "office"
+  },
+  {
+    "software": "Office 2021 Professional",
+    "support": "Microsoft Office",
+    "size": "4.71 GB",
+    "download": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/Professional2021Retail.img",
+    "category": "office"
+  },
+  {
+    "software": "Office 2021 Professional Plus",
+    "support": "Microsoft Office",
+    "size": "4.71 GB",
+    "download": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/ProPlus2021Retail.img",
+    "category": "office"
   }
 ]
