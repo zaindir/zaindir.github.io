@@ -264,5 +264,12 @@
     "size": "3.41 MB",
     "download": "/cgi/bin/WinRAR.7.13.x64.zip",
     "category": "utility"
+  },
+  {
+    "software": "7-Zip 25.01",
+    "support": "7-Zip is a file archiver with a high compression ratio.",
+    "size": "1.55 MB",
+    "download": "/cgi/bin/7z2501-x64.zip",
+    "category": "utility"
   }
 ]
