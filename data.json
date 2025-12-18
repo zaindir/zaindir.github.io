@@ -271,5 +271,12 @@
     "size": "1.55 MB",
     "download": "/cgi/bin/7z2501-x64.zip",
     "category": "utility"
+  },
+  {
+    "software": "IMG Tool 2.0",
+    "support": "Grand Theft Auto IMG Archive Manager",
+    "size": "229 KB",
+    "download": "/cgi/bin/imgtool20.zip",
+    "category": "utility"
   }
 ]
