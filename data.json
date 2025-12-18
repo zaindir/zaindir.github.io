@@ -1,289 +1,282 @@
 [
   {
-    "software": "RESETTER EPSON L100",
-    "support": "Epson L100",
-    "size": "3.3 MB",
-    "download": "/cgi/bin/EPSON_L100.zip",
-    "category": "printer"
-  },
-  {
-    "software": "RESETTER EPSON L120/L121",
-    "support": "Epson L120 & L121",
-    "size": "783 KB",
-    "download": "/cgi/bin/EPSON_L120.zip",
-    "category": "printer"
-  },
-  {
-    "software": "RESETTER EPSON L210",
-    "support": "Epson L210",
-    "size": "1.2 MB",
-    "download": "/cgi/bin/EPSON_L210.zip",
-    "category": "printer"
-  },
-  {
-    "software": "RESETTER EPSON L220",
-    "support": "Epson L220",
-    "size": "2.7 MB",
-    "download": "/cgi/bin/EPSON_L220.zip",
-    "category": "printer"
-  },
-  {
-    "software": "RESETTER EPSON L310",
-    "support": "Epson L310",
-    "size": "2.7 MB",
-    "download": "/cgi/bin/EPSON_L310.zip",
-    "category": "printer"
-  },
-  {
-    "software": "RESETTER EPSON L360",
-    "support": "Epson L360",
-    "size": "2.7 MB",
-    "download": "/cgi/bin/EPSON_L360.zip",
-    "category": "printer"
-  },
-  {
-    "software": "RESETTER EPSON L380",
-    "support": "Epson L380",
-    "size": "1.6 MB",
-    "download": "/cgi/bin/EPSON_L380.zip",
-    "category": "printer"
-  },
-  {
-    "software": "RESETTER EPSON L385",
-    "support": "Epson L385",
+    "software": "RESETTER EPSON XP 520",
+    "support": "RESETTER & MAINTENANCE",
     "size": "1.5 MB",
-    "download": "/cgi/bin/EPSON_L385.zip",
+    "download": "/cgi/bin/ResetEpson_XP-520-620-625-720-760-820-860.zip",
     "category": "printer"
   },
   {
-    "software": "RESETTER EPSON L565",
-    "support": "Epson L565",
-    "size": "2.7 MB",
-    "download": "/cgi/bin/EPSON_L565.zip",
+    "software": "RESETTER EPSON XP 620",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "1.5 MB",
+    "download": "/cgi/bin/ResetEpson_XP-520-620-625-720-760-820-860.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON XP 625",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "1.5 MB",
+    "download": "/cgi/bin/ResetEpson_XP-520-620-625-720-760-820-860.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON XP 720",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "1.5 MB",
+    "download": "/cgi/bin/ResetEpson_XP-520-620-625-720-760-820-860.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON XP 760",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "1.5 MB",
+    "download": "/cgi/bin/ResetEpson_XP-520-620-625-720-760-820-860.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON XP 820",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "1.5 MB",
+    "download": "/cgi/bin/ResetEpson_XP-520-620-625-720-760-820-860.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON XP 860",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "1.5 MB",
+    "download": "/cgi/bin/ResetEpson_XP-520-620-625-720-760-820-860.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L3150",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "4.1 MB",
+    "download": "/cgi/bin/ResetEpson_L3150-L3160-L1110-L5190.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L3160",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "4.1 MB",
+    "download": "/cgi/bin/ResetEpson_L3150-L3160-L1110-L5190.zip",
     "category": "printer"
   },
   {
     "software": "RESETTER EPSON L1110",
-    "support": "Epson L1110",
-    "size": "5.7 MB",
-    "download": "/cgi/bin/EPSON_L1110.zip",
-    "category": "printer"
-  },
-  {
-    "software": "RESETTER EPSON L1210",
-    "support": "Epson L1210",
-    "size": "4.2 MB",
-    "download": "/cgi/bin/EPSON_L1210.zip",
-    "category": "printer"
-  },
-  {
-    "software": "RESETTER EPSON L1210/L3210/L3250/L3251/L3260/L5290",
-    "support": "L1210/L3210/L3250/L3251/L3260/L5290",
-    "size": "4.2 MB",
-    "download": "/cgi/bin/EPSON_L1210_L3210_L3250_L3251_L3260_L5290.zip",
-    "category": "printer"
-  },
-  {
-    "software": "RESETTER EPSON L1300",
-    "support": "Epson L1300",
-    "size": "2.2 MB",
-    "download": "/cgi/bin/EPSON_L1300.zip",
-    "category": "printer"
-  },
-  {
-    "software": "RESETTER EPSON L1390",
-    "support": "Epson L1390",
-    "size": "770 KB",
-    "download": "/cgi/bin/EPSON_L1390.zip",
-    "category": "printer"
-  },
-  {
-    "software": "RESETTER EPSON L3110/L3100/L3150/L3001",
-    "support": "L3110/L3100/L3150/L3001",
-    "size": "14 MB",
-    "download": "/cgi/bin/EPSON_L3110_L3100_L3150_L3001.zip",
-    "category": "printer"
-  },
-  {
-    "software": "RESETTER EPSON L4150",
-    "support": "Epson L4150",
-    "size": "5.9 MB",
-    "download": "/cgi/bin/EPSON_L4150.zip",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "4.1 MB",
+    "download": "/cgi/bin/ResetEpson_L3150-L3160-L1110-L5190.zip",
     "category": "printer"
   },
   {
     "software": "RESETTER EPSON L5190",
-    "support": "Epson L5190",
-    "size": "6 MB",
-    "download": "/cgi/bin/EPSON_L5190.zip",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "4.1 MB",
+    "download": "/cgi/bin/ResetEpson_L3150-L3160-L1110-L5190.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON XP 235",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "1.2 MB",
+    "download": "/cgi/bin/ResetEpson_XP-235-235A-332-335-332A-432-435.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON XP 235A",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "1.2 MB",
+    "download": "/cgi/bin/ResetEpson_XP-235-235A-332-335-332A-432-435.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON XP 332",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "1.2 MB",
+    "download": "/cgi/bin/ResetEpson_XP-235-235A-332-335-332A-432-435.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON XP 335",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "1.2 MB",
+    "download": "/cgi/bin/ResetEpson_XP-235-235A-332-335-332A-432-435.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON XP 332A",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "1.2 MB",
+    "download": "/cgi/bin/ResetEpson_XP-235-235A-332-335-332A-432-435.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON XP 432",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "1.2 MB",
+    "download": "/cgi/bin/ResetEpson_XP-235-235A-332-335-332A-432-435.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON XP 435",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "1.2 MB",
+    "download": "/cgi/bin/ResetEpson_XP-235-235A-332-335-332A-432-435.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L1210",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "2.2 MB",
+    "download": "/cgi/bin/ResetEpson_L1210.L1211.L1216.L1250.L1251.L1256.L3210.L3211.L3216.L3250.L3251.L3256.L5290.L5296.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L1211",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "2.2 MB",
+    "download": "/cgi/bin/ResetEpson_L1210.L1211.L1216.L1250.L1251.L1256.L3210.L3211.L3216.L3250.L3251.L3256.L5290.L5296.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L1216",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "2.2 MB",
+    "download": "/cgi/bin/ResetEpson_L1210.L1211.L1216.L1250.L1251.L1256.L3210.L3211.L3216.L3250.L3251.L3256.L5290.L5296.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L1250",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "2.2 MB",
+    "download": "/cgi/bin/ResetEpson_L1210.L1211.L1216.L1250.L1251.L1256.L3210.L3211.L3216.L3250.L3251.L3256.L5290.L5296.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L1251",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "2.2 MB",
+    "download": "/cgi/bin/ResetEpson_L1210.L1211.L1216.L1250.L1251.L1256.L3210.L3211.L3216.L3250.L3251.L3256.L5290.L5296.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L1256",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "2.2 MB",
+    "download": "/cgi/bin/ResetEpson_L1210.L1211.L1216.L1250.L1251.L1256.L3210.L3211.L3216.L3250.L3251.L3256.L5290.L5296.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L3210",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "2.2 MB",
+    "download": "/cgi/bin/ResetEpson_L1210.L1211.L1216.L1250.L1251.L1256.L3210.L3211.L3216.L3250.L3251.L3256.L5290.L5296.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L3211",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "2.2 MB",
+    "download": "/cgi/bin/ResetEpson_L1210.L1211.L1216.L1250.L1251.L1256.L3210.L3211.L3216.L3250.L3251.L3256.L5290.L5296.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L3216",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "2.2 MB",
+    "download": "/cgi/bin/ResetEpson_L1210.L1211.L1216.L1250.L1251.L1256.L3210.L3211.L3216.L3250.L3251.L3256.L5290.L5296.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L3250",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "2.2 MB",
+    "download": "/cgi/bin/ResetEpson_L1210.L1211.L1216.L1250.L1251.L1256.L3210.L3211.L3216.L3250.L3251.L3256.L5290.L5296.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L3251",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "2.2 MB",
+    "download": "/cgi/bin/ResetEpson_L1210.L1211.L1216.L1250.L1251.L1256.L3210.L3211.L3216.L3250.L3251.L3256.L5290.L5296.zip",
+    "category": "printer"
+  },
+  {
+    "software": "RESETTER EPSON L3256",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "2.2 MB",
+    "download": "/cgi/bin/ResetEpson_L1210.L1211.L1216.L1250.L1251.L1256.L3210.L3211.L3216.L3250.L3251.L3256.L5290.L5296.zip",
     "category": "printer"
   },
   {
     "software": "RESETTER EPSON L5290",
-    "support": "Epson L5290",
-    "size": "4.2 MB",
-    "download": "/cgi/bin/EPSON_L5290.zip",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "2.2 MB",
+    "download": "/cgi/bin/ResetEpson_L1210.L1211.L1216.L1250.L1251.L1256.L3210.L3211.L3216.L3250.L3251.L3256.L5290.L5296.zip",
     "category": "printer"
   },
   {
-    "software": "RESETTER ESPSON L110",
-    "support": "Epson L110",
-    "size": "2.7 MB",
-    "download": "/cgi/bin/ESPSON_L110.zip",
+    "software": "RESETTER EPSON L5296",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "2.2 MB",
+    "download": "/cgi/bin/ResetEpson_L1210.L1211.L1216.L1250.L1251.L1256.L3210.L3211.L3216.L3250.L3251.L3256.L5290.L5296.zip",
     "category": "printer"
   },
   {
-    "software": "RUFUS 4.11",
-    "support": "Bootable Tools",
-    "size": "1.8 MB",
-    "download": "/cgi/bin/rufus-4.11p.zip",
-    "category": "utility"
+    "software": "RESETTER EPSON L850",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "3.0 MB",
+    "download": "/cgi/bin/ResetEpson_L8050.L18050.L18058.L8058.zip",
+    "category": "printer"
   },
   {
-    "software": "Office 2013 Home and Student",
-    "support": "Microsoft Office",
-    "size": "2.04 GB",
-    "download": "https://officeredir.microsoft.com/r/rlidO15C2RMediaDownload?p1=db&p2=en-us&p3=HomeStudentRetail",
-    "category": "office"
+    "software": "RESETTER EPSON L18050",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "3.0 MB",
+    "download": "/cgi/bin/ResetEpson_L8050.L18050.L18058.L8058.zip",
+    "category": "printer"
   },
   {
-    "software": "Office 2013 Home and Business",
-    "support": "Microsoft Office",
-    "size": "2.04 GB",
-    "download": "https://officeredir.microsoft.com/r/rlidO15C2RMediaDownload?p1=db&p2=en-us&p3=HomeBusinessRetail",
-    "category": "office"
+    "software": "RESETTER EPSON L18058",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "3.0 MB",
+    "download": "/cgi/bin/ResetEpson_L8050.L18050.L18058.L8058.zip",
+    "category": "printer"
   },
   {
-    "software": "Office 2013 Professional",
-    "support": "Microsoft Office",
-    "size": "2.04 GB",
-    "download": "https://officeredir.microsoft.com/r/rlidO15C2RMediaDownload?p1=db&p2=en-us&p3=ProfessionalRetail",
-    "category": "office"
+    "software": "RESETTER EPSON L8058",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "3.0 MB",
+    "download": "/cgi/bin/ResetEpson_L8050.L18050.L18058.L8058.zip",
+    "category": "printer"
   },
   {
-    "software": "Office 2013 Professional Plus",
-    "support": "Microsoft Office",
-    "size": "2.04 GB",
-    "download": "https://officeredir.microsoft.com/r/rlidO15C2RMediaDownload?p1=db&p2=en-us&p3=ProPlusRetail",
-    "category": "office"
+    "software": "RESETTER EPSON M1100",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "4.0 MB",
+    "download": "/cgi/bin/ResetEpson_M1100_M1120.zip",
+    "category": "printer"
   },
   {
-    "software": "Office 2016 Home and Student",
-    "support": "Microsoft Office",
-    "size": "4.13 GB",
-    "download": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/HomeStudentRetail.img",
-    "category": "office"
+    "software": "RESETTER EPSON M1120",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "4.0 MB",
+    "download": "/cgi/bin/ResetEpson_M1100_M1120.zip",
+    "category": "printer"
   },
   {
-    "software": "Office 2016 Home and Business",
-    "support": "Microsoft Office",
-    "size": "4.13 GB",
-    "download": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/HomeBusinessRetail.img",
-    "category": "office"
+    "software": "RESETTER EPSON 1500W",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "4.3 MB",
+    "download": "/cgi/bin/ResetEpson_1500W.zip",
+    "category": "printer"
   },
   {
-    "software": "Office 2016 Professional",
-    "support": "Microsoft Office",
-    "size": "4.13 GB",
-    "download": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/ProfessionalRetail.img",
-    "category": "office"
-  },
-  {
-    "software": "Office 2016 Professional Plus",
-    "support": "Microsoft Office",
-    "size": "4.13 GB",
-    "download": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/ProPlusRetail.img",
-    "category": "office"
-  },
-  {
-    "software": "Office 2019 Home and Student",
-    "support": "Microsoft Office",
-    "size": "3.99 GB",
-    "download": "https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/HomeStudent2019Retail.img",
-    "category": "office"
-  },
-  {
-    "software": "Office 2019 Home and Business",
-    "support": "Microsoft Office",
-    "size": "3.99 GB",
-    "download": "https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/HomeBusiness2019Retail.img",
-    "category": "office"
-  },
-  {
-    "software": "Office 2019 Professional",
-    "support": "Microsoft Office",
-    "size": "3.99 GB",
-    "download": "https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/Professional2019Retail.img",
-    "category": "office"
-  },
-  {
-    "software": "Office 2019 Professional Plus",
-    "support": "Microsoft Office",
-    "size": "3.99 GB",
-    "download": "https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/ProPlus2019Retail.img",
-    "category": "office"
-  },
-  {
-    "software": "Office 2021 Home and Student",
-    "support": "Microsoft Office",
-    "size": "4.71 GB",
-    "download": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/HomeStudent2021Retail.img",
-    "category": "office"
-  },
-  {
-    "software": "Office 2021 Home and Business",
-    "support": "Microsoft Office",
-    "size": "4.71 GB",
-    "download": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/HomeBusiness2021Retail.img",
-    "category": "office"
-  },
-  {
-    "software": "Office 2021 Professional",
-    "support": "Microsoft Office",
-    "size": "4.71 GB",
-    "download": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/Professional2021Retail.img",
-    "category": "office"
-  },
-  {
-    "software": "Office 2021 Professional Plus",
-    "support": "Microsoft Office",
-    "size": "4.71 GB",
-    "download": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/ProPlus2021Retail.img",
-    "category": "office"
-  },
-  {
-    "software": "HDD LLF Low Level Format Tool",
-    "support": "HDD Low Level Format Tool is a utility for low-level hard disk drive formatting",
-    "size": "1.52 MB",
-    "download": "/cgi/bin/HDDLLFsetup.4.50.zip",
-    "category": "disk"
-  },
-  {
-    "software": "WinRAR 7.13",
-    "support": "WinRAR is a powerful archiver extractor tool, and can open all popular file formats.",
-    "size": "3.41 MB",
-    "download": "/cgi/bin/WinRAR.7.13.x64.zip",
-    "category": "utility"
-  },
-  {
-    "software": "7-Zip 25.01",
-    "support": "7-Zip is a file archiver with a high compression ratio.",
-    "size": "1.55 MB",
-    "download": "/cgi/bin/7z2501-x64.zip",
-    "category": "utility"
-  },
-  {
-    "software": "IMG Tool 2.0",
-    "support": "Grand Theft Auto IMG Archive Manager",
-    "size": "229 KB",
-    "download": "/cgi/bin/imgtool20.zip",
-    "category": "utility"
-  },
-  {
-    "software": "Visual Studio 2010 Ultimate (English)",
-    "support": "Microsoft Visual Studio 2010 Ultimate Full ISO",
-    "size": "2.27 GB",
-    "download": "https://archive.org/download/en_vs_2010_ult/SW_DVD9_VS_Ultimate_2010_English_Core_MLF_X16-76630.ISO",
-    "category": "utility"
+    "software": "RESETTER EPSON L120",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "2.3 MB",
+    "download": "/cgi/bin/ResetEpson_L120..zip",
+    "category": "printer"
   }
 ]
