@@ -257,5 +257,12 @@
     "size": "1.52 MB",
     "download": "/cgi/bin/HDDLLFsetup.4.50.zip",
     "category": "disk"
+  },
+  {
+    "software": "WinRAR 7.13",
+    "support": "WinRAR is a powerful archiver extractor tool, and can open all popular file formats.",
+    "size": "3.41 MB",
+    "download": "/cgi/bin/WinRAR.7.13.x64.zip",
+    "category": "utility"
   }
 ]
