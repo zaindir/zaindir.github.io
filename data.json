@@ -265,6 +265,41 @@
     "download": "/cgi/bin/ResetEpson_M1100_M1120.zip",
     "category": "epson"
   },
+    {
+    "software": "RESETTER EPSON L130",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "2.66 MB",
+    "download": "/cgi/bin/ResetEpson_L130-L220-L310-L360-L365.zip",
+    "category": "epson"
+  },
+    {
+    "software": "RESETTER EPSON L220",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "2.66 MB",
+    "download": "/cgi/bin/ResetEpson_L130-L220-L310-L360-L365.zip",
+    "category": "epson"
+  },
+    {
+    "software": "RESETTER EPSON L310",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "2.66 MB",
+    "download": "/cgi/bin/ResetEpson_L130-L220-L310-L360-L365.zip",
+    "category": "epson"
+  },
+    {
+    "software": "RESETTER EPSON L360",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "2.66 MB",
+    "download": "/cgi/bin/ResetEpson_L130-L220-L310-L360-L365.zip",
+    "category": "epson"
+  },
+    {
+    "software": "RESETTER EPSON L365",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "2.66 MB",
+    "download": "/cgi/bin/ResetEpson_L130-L220-L310-L360-L365.zip",
+    "category": "epson"
+  },
   {
     "software": "RESETTER EPSON 1500W",
     "support": "RESETTER & MAINTENANCE",
@@ -434,3 +469,4 @@
     "category": "canon"
   }
 ]
+
