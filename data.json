@@ -1,472 +1,121 @@
 [
   {
-    "software": "RESETTER EPSON XP 520",
+    "software": "RESETTER EPSON L380",
     "support": "RESETTER & MAINTENANCE",
-    "size": "1.5 MB",
-    "download": "/cgi/bin/ResetEpson_XP-520-620-625-720-760-820-860.zip",
-    "category": "epson"
-  },
-  {
-    "software": "RESETTER EPSON XP 620",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "1.5 MB",
-    "download": "/cgi/bin/ResetEpson_XP-520-620-625-720-760-820-860.zip",
-    "category": "epson"
-  },
-  {
-    "software": "RESETTER EPSON XP 625",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "1.5 MB",
-    "download": "/cgi/bin/ResetEpson_XP-520-620-625-720-760-820-860.zip",
-    "category": "epson"
-  },
-  {
-    "software": "RESETTER EPSON XP 720",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "1.5 MB",
-    "download": "/cgi/bin/ResetEpson_XP-520-620-625-720-760-820-860.zip",
-    "category": "epson"
-  },
-  {
-    "software": "RESETTER EPSON XP 760",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "1.5 MB",
-    "download": "/cgi/bin/ResetEpson_XP-520-620-625-720-760-820-860.zip",
-    "category": "epson"
-  },
-  {
-    "software": "RESETTER EPSON XP 820",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "1.5 MB",
-    "download": "/cgi/bin/ResetEpson_XP-520-620-625-720-760-820-860.zip",
-    "category": "epson"
-  },
-  {
-    "software": "RESETTER EPSON XP 860",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "1.5 MB",
-    "download": "/cgi/bin/ResetEpson_XP-520-620-625-720-760-820-860.zip",
-    "category": "epson"
-  },
-  {
-    "software": "RESETTER EPSON L3150",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "4.1 MB",
-    "download": "/cgi/bin/ResetEpson_L3150-L3160-L1110-L5190.zip",
-    "category": "epson"
-  },
-  {
-    "software": "RESETTER EPSON L3160",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "4.1 MB",
-    "download": "/cgi/bin/ResetEpson_L3150-L3160-L1110-L5190.zip",
-    "category": "epson"
-  },
-  {
-    "software": "RESETTER EPSON L1110",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "4.1 MB",
-    "download": "/cgi/bin/ResetEpson_L3150-L3160-L1110-L5190.zip",
-    "category": "epson"
-  },
-  {
-    "software": "RESETTER EPSON L5190",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "4.1 MB",
-    "download": "/cgi/bin/ResetEpson_L3150-L3160-L1110-L5190.zip",
-    "category": "epson"
-  },
-  {
-    "software": "RESETTER EPSON XP 235",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "1.2 MB",
-    "download": "/cgi/bin/ResetEpson_XP-235-235A-332-335-332A-432-435.zip",
-    "category": "epson"
-  },
-  {
-    "software": "RESETTER EPSON XP 235A",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "1.2 MB",
-    "download": "/cgi/bin/ResetEpson_XP-235-235A-332-335-332A-432-435.zip",
-    "category": "epson"
-  },
-  {
-    "software": "RESETTER EPSON XP 332",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "1.2 MB",
-    "download": "/cgi/bin/ResetEpson_XP-235-235A-332-335-332A-432-435.zip",
-    "category": "epson"
-  },
-  {
-    "software": "RESETTER EPSON XP 335",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "1.2 MB",
-    "download": "/cgi/bin/ResetEpson_XP-235-235A-332-335-332A-432-435.zip",
-    "category": "epson"
-  },
-  {
-    "software": "RESETTER EPSON XP 332A",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "1.2 MB",
-    "download": "/cgi/bin/ResetEpson_XP-235-235A-332-335-332A-432-435.zip",
-    "category": "epson"
-  },
-  {
-    "software": "RESETTER EPSON XP 432",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "1.2 MB",
-    "download": "/cgi/bin/ResetEpson_XP-235-235A-332-335-332A-432-435.zip",
-    "category": "epson"
-  },
-  {
-    "software": "RESETTER EPSON XP 435",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "1.2 MB",
-    "download": "/cgi/bin/ResetEpson_XP-235-235A-332-335-332A-432-435.zip",
-    "category": "epson"
-  },
-  {
-    "software": "RESETTER EPSON L1210",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "2.2 MB",
-    "download": "/cgi/bin/ResetEpson_L1210.L1211.L1216.L1250.L1251.L1256.L3210.L3211.L3216.L3250.L3251.L3256.L5290.L5296.zip",
-    "category": "epson"
-  },
-  {
-    "software": "RESETTER EPSON L1211",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "2.2 MB",
-    "download": "/cgi/bin/ResetEpson_L1210.L1211.L1216.L1250.L1251.L1256.L3210.L3211.L3216.L3250.L3251.L3256.L5290.L5296.zip",
-    "category": "epson"
-  },
-  {
-    "software": "RESETTER EPSON L1216",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "2.2 MB",
-    "download": "/cgi/bin/ResetEpson_L1210.L1211.L1216.L1250.L1251.L1256.L3210.L3211.L3216.L3250.L3251.L3256.L5290.L5296.zip",
-    "category": "epson"
-  },
-  {
-    "software": "RESETTER EPSON L1250",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "2.2 MB",
-    "download": "/cgi/bin/ResetEpson_L1210.L1211.L1216.L1250.L1251.L1256.L3210.L3211.L3216.L3250.L3251.L3256.L5290.L5296.zip",
-    "category": "epson"
-  },
-  {
-    "software": "RESETTER EPSON L1251",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "2.2 MB",
-    "download": "/cgi/bin/ResetEpson_L1210.L1211.L1216.L1250.L1251.L1256.L3210.L3211.L3216.L3250.L3251.L3256.L5290.L5296.zip",
-    "category": "epson"
-  },
-  {
-    "software": "RESETTER EPSON L1256",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "2.2 MB",
-    "download": "/cgi/bin/ResetEpson_L1210.L1211.L1216.L1250.L1251.L1256.L3210.L3211.L3216.L3250.L3251.L3256.L5290.L5296.zip",
-    "category": "epson"
-  },
-  {
-    "software": "RESETTER EPSON L3210",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "2.2 MB",
-    "download": "/cgi/bin/ResetEpson_L1210.L1211.L1216.L1250.L1251.L1256.L3210.L3211.L3216.L3250.L3251.L3256.L5290.L5296.zip",
-    "category": "epson"
-  },
-  {
-    "software": "RESETTER EPSON L3211",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "2.2 MB",
-    "download": "/cgi/bin/ResetEpson_L1210.L1211.L1216.L1250.L1251.L1256.L3210.L3211.L3216.L3250.L3251.L3256.L5290.L5296.zip",
-    "category": "epson"
-  },
-  {
-    "software": "RESETTER EPSON L3216",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "2.2 MB",
-    "download": "/cgi/bin/ResetEpson_L1210.L1211.L1216.L1250.L1251.L1256.L3210.L3211.L3216.L3250.L3251.L3256.L5290.L5296.zip",
+    "size": "1.6 MB",
+    "download": "/cgi/vyYQNXNP.html",
     "category": "epson"
   },
   {
     "software": "RESETTER EPSON L3250",
     "support": "RESETTER & MAINTENANCE",
-    "size": "2.2 MB",
-    "download": "/cgi/bin/ResetEpson_L1210.L1211.L1216.L1250.L1251.L1256.L3210.L3211.L3216.L3250.L3251.L3256.L5290.L5296.zip",
+    "size": "4.2 MB",
+    "download": "/cgi/NWQkfiLH.html",
+    "category": "epson"
+  },
+  {
+    "software": "RESETTER EPSON L1210",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "4.2 MB",
+    "download": "/cgi/TSxkqadh.html",
+    "category": "epson"
+  },
+  {
+    "software": "RESETTER EPSON L3210",
+    "support": "RESETTER & MAINTENANCE",
+    "size": "4.2 MB",
+    "download": "/cgi/MRYxOaOL.html",
     "category": "epson"
   },
   {
     "software": "RESETTER EPSON L3251",
     "support": "RESETTER & MAINTENANCE",
-    "size": "2.2 MB",
-    "download": "/cgi/bin/ResetEpson_L1210.L1211.L1216.L1250.L1251.L1256.L3210.L3211.L3216.L3250.L3251.L3256.L5290.L5296.zip",
+    "size": "4.2 MB",
+    "download": "/cgi/JQzJXzHU.html",
     "category": "epson"
   },
   {
-    "software": "RESETTER EPSON L3256",
+    "software": "RESETTER EPSON L3260",
     "support": "RESETTER & MAINTENANCE",
-    "size": "2.2 MB",
-    "download": "/cgi/bin/ResetEpson_L1210.L1211.L1216.L1250.L1251.L1256.L3210.L3211.L3216.L3250.L3251.L3256.L5290.L5296.zip",
+    "size": "4.2 MB",
+    "download": "/cgi/wnpdOZfD.html",
     "category": "epson"
   },
   {
     "software": "RESETTER EPSON L5290",
     "support": "RESETTER & MAINTENANCE",
-    "size": "2.2 MB",
-    "download": "/cgi/bin/ResetEpson_L1210.L1211.L1216.L1250.L1251.L1256.L3210.L3211.L3216.L3250.L3251.L3256.L5290.L5296.zip",
+    "size": "4.2 MB",
+    "download": "/cgi/HhNnjiDM.html",
     "category": "epson"
   },
   {
-    "software": "RESETTER EPSON L5296",
+    "software": "RESETTER EPSON L4150",
     "support": "RESETTER & MAINTENANCE",
-    "size": "2.2 MB",
-    "download": "/cgi/bin/ResetEpson_L1210.L1211.L1216.L1250.L1251.L1256.L3210.L3211.L3216.L3250.L3251.L3256.L5290.L5296.zip",
+    "size": "5.9 MB",
+    "download": "/cgi/mVNLxdGT.html",
     "category": "epson"
   },
   {
-    "software": "RESETTER EPSON L850",
+    "software": "RESETTER EPSON L4160",
     "support": "RESETTER & MAINTENANCE",
-    "size": "3.0 MB",
-    "download": "/cgi/bin/ResetEpson_L8050.L18050.L18058.L8058.zip",
+    "size": "5.9 MB",
+    "download": "/cgi/mVNLxdGT.html",
     "category": "epson"
   },
   {
-    "software": "RESETTER EPSON L18050",
+    "software": "RESETTER EPSON 1390",
     "support": "RESETTER & MAINTENANCE",
-    "size": "3.0 MB",
-    "download": "/cgi/bin/ResetEpson_L8050.L18050.L18058.L8058.zip",
+    "size": "771 KB",
+    "download": "/cgi/AEydNSsT.html",
     "category": "epson"
   },
   {
-    "software": "RESETTER EPSON L18058",
+    "software": "RESETTER EPSON L565",
     "support": "RESETTER & MAINTENANCE",
-    "size": "3.0 MB",
-    "download": "/cgi/bin/ResetEpson_L8050.L18050.L18058.L8058.zip",
+    "size": "2.7 MB",
+    "download": "/cgi/vnkdrcEN.html",
     "category": "epson"
   },
   {
-    "software": "RESETTER EPSON L8058",
+    "software": "RESETTER EPSON L385",
     "support": "RESETTER & MAINTENANCE",
-    "size": "3.0 MB",
-    "download": "/cgi/bin/ResetEpson_L8050.L18050.L18058.L8058.zip",
+    "size": "1.5 MB",
+    "download": "/cgi/RuYldYJv.html",
     "category": "epson"
   },
   {
-    "software": "RESETTER EPSON M1100",
+    "software": "RESETTER EPSON L100",
     "support": "RESETTER & MAINTENANCE",
-    "size": "4.0 MB",
-    "download": "/cgi/bin/ResetEpson_M1100_M1120.zip",
+    "size": "3.3 MB",
+    "download": "/cgi/eRWeOIpU.html",
     "category": "epson"
   },
   {
-    "software": "RESETTER EPSON M1120",
+    "software": "RESETTER EPSON L300",
     "support": "RESETTER & MAINTENANCE",
-    "size": "4.0 MB",
-    "download": "/cgi/bin/ResetEpson_M1100_M1120.zip",
-    "category": "epson"
-  },
-    {
-    "software": "RESETTER EPSON L130",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "2.66 MB",
-    "download": "/cgi/bin/ResetEpson_L130-L220-L310-L360-L365.zip",
-    "category": "epson"
-  },
-    {
-    "software": "RESETTER EPSON L220",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "2.66 MB",
-    "download": "/cgi/bin/ResetEpson_L130-L220-L310-L360-L365.zip",
-    "category": "epson"
-  },
-    {
-    "software": "RESETTER EPSON L310",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "2.66 MB",
-    "download": "/cgi/bin/ResetEpson_L130-L220-L310-L360-L365.zip",
-    "category": "epson"
-  },
-    {
-    "software": "RESETTER EPSON L360",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "2.66 MB",
-    "download": "/cgi/bin/ResetEpson_L130-L220-L310-L360-L365.zip",
-    "category": "epson"
-  },
-    {
-    "software": "RESETTER EPSON L365",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "2.66 MB",
-    "download": "/cgi/bin/ResetEpson_L130-L220-L310-L360-L365.zip",
+    "size": "1.2 MB",
+    "download": "/cgi/eRWeOIpU.html",
     "category": "epson"
   },
   {
-    "software": "RESETTER EPSON 1500W",
+    "software": "RESETTER EPSON L5190",
     "support": "RESETTER & MAINTENANCE",
-    "size": "4.3 MB",
-    "download": "/cgi/bin/ResetEpson_1500W.zip",
+    "size": "6.0 MB",
+    "download": "/cgi/jrxkpAwL.html",
     "category": "epson"
   },
   {
     "software": "RESETTER EPSON L120",
     "support": "RESETTER & MAINTENANCE",
-    "size": "2.3 MB",
-    "download": "/cgi/bin/ResetEpson_L120..zip",
+    "size": "783 KB",
+    "download": "/cgi/vxOiTFOQ.html",
     "category": "epson"
   },
   {
     "software": "RESETTER EPSON L121",
     "support": "RESETTER & MAINTENANCE",
-    "size": "2.3 MB",
-    "download": "/cgi/bin/ResetEpson_L120..zip",
+    "size": "783 KB",
+    "download": "/cgi/vxOiTFOQ.html",
     "category": "epson"
-  },
-  {
-    "software": "RESETTER CANON MG2570",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "46.73 MB",
-    "download": "https://www.mediafire.com/file/92jzhwlbile8otg/ResetterCannon.MG2570.zip/file",
-    "category": "canon"
-  },
-  {
-    "software": "RESETTER CANON E400",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "9.53 MB",
-    "download": "https://www.mediafire.com/file/wbjl2w9thci41lk/ResetterCanon.E400.zip/file",
-    "category": "canon"
-  },
-  {
-    "software": "RESETTER CANON E410",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "9.53 MB",
-    "download": "https://www.mediafire.com/file/ccr42706hp93g0o/ResetterCanon.E410.zip/file",
-    "category": "canon"
-  },
-  {
-    "software": "RESETTER CANON E510",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "9.53 MB",
-    "download": "https://www.mediafire.com/file/0s572wne0q3rkg8/ResetterCanon.E510.zip/file",
-    "category": "canon"
-  },
-  {
-    "software": "RESETTER CANON G1000",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "200.48 KB",
-    "download": "https://www.mediafire.com/file/0clcnignyjegxus/ResetterCanon.G1000.zip/file",
-    "category": "canon"
-  },
-  {
-    "software": "RESETTER CANON G1010",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "9.53 MB",
-    "download": "https://www.mediafire.com/file/lqfbqrvec9235hn/ResetterCanon.G1010.zip/file",
-    "category": "canon"
-  },
-  {
-    "software": "RESETTER CANON G3000",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "9.53 MB",
-    "download": "https://www.mediafire.com/file/06j2akjo1frvc3s/ResetterCanon.G3000.zip/file",
-    "category": "canon"
-  },
-  {
-    "software": "RESETTER CANON G3010",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "200.48 KB",
-    "download": "https://www.mediafire.com/file/nphkqo7ut4t2oj2/ResetterCanon.G3010.zip/file",
-    "category": "canon"
-  },
-  {
-    "software": "RESETTER CANON iP 1880",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "230.47 KB",
-    "download": "https://www.mediafire.com/file/1yzu4i5sshbjvad/ResetterCanon.iP1880.zip/file",
-    "category": "canon"
-  },
-  {
-    "software": "RESETTER CANON iP1980",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "230.11 KB",
-    "download": "https://www.mediafire.com/file/e1gdte76ewtwlu1/ResetterCanon.IP1980.zip/file",
-    "category": "canon"
-  },
-  {
-    "software": "RESETTER CANON iP2770",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "9.53 MB",
-    "download": "https://www.mediafire.com/file/gl4i66d9lpg0zcf/ResetterCanon.IP2770.zip/file",
-    "category": "canon"
-  },
-  {
-    "software": "RESETTER CANON LBP6030",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "229.75 KB",
-    "download": "https://www.mediafire.com/file/v9zxy1oyk5n2bjk/ResetterCanon.LBP6030.zip/file",
-    "category": "canon"
-  },
-  {
-    "software": "RESETTER CANON MG2570S",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "46.73 MB",
-    "download": "https://www.mediafire.com/file/rvyemhflgepf86f/ResetterCanon.MG2570S.zip/file",
-    "category": "canon"
-  },
-  {
-    "software": "RESETTER CANON MP140",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "229.38 KB",
-    "download": "https://www.mediafire.com/file/na3p2bbamfn7fmd/ResetterCanon.MP140.zip/file",
-    "category": "canon"
-  },
-  {
-    "software": "RESETTER CANON MP145",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "229.38 KB",
-    "download": "https://www.mediafire.com/file/046l39d001rfpsm/ResetterCanon.MP145.zip/file",
-    "category": "canon"
-  },
-  {
-    "software": "RESETTER CANON MP237",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "9.53 MB",
-    "download": "https://www.mediafire.com/file/wuq5t17lgehsdvp/ResetterCanon.MP237.zip/file",
-    "category": "canon"
-  },
-  {
-    "software": "RESETTER CANON MP258",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "9.53 MB",
-    "download": "https://www.mediafire.com/file/mheb5gnuokd6vva/ResetterCanon.MP258.zip/file",
-    "category": "canon"
-  },
-  {
-    "software": "RESETTER CANON MP287",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "9.53 MB",
-    "download": "https://www.mediafire.com/file/tcfq8883o080eyy/ResetterCanon.MP287.zip/file",
-    "category": "canon"
-  },
-  {
-    "software": "RESETTER CANON MX497",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "9.53 MB",
-    "download": "https://www.mediafire.com/file/d2bhtr7i77xzcz5/ResetterCanon.MX497.zip/file",
-    "category": "canon"
-  },
-  {
-    "software": "RESETTER CANON TS300",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "9.53 MB",
-    "download": "https://www.mediafire.com/file/wwg5m8jspus31us/ResetterCanon.TS300.zip/file",
-    "category": "canon"
-  },
-  {
-    "software": "RESETTER CANON TS307",
-    "support": "RESETTER & MAINTENANCE",
-    "size": "229.38 KB",
-    "download": "https://www.mediafire.com/file/6deaz4csds4blrh/ResetterCanon.TS307.zip/file",
-    "category": "canon"
   }
 ]
-
