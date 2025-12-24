@@ -5,7 +5,6 @@ let filteredRows = [];
 
 document.getElementById('search').addEventListener('keyup', applySearch);
 
-/* CSV parser aman (Windows CRLF, quote, koma) */
 function parseCSV(text) {
     const result = [];
     let row = [];
@@ -14,22 +13,11 @@ function parseCSV(text) {
 
     for (let i = 0; i < text.length; i++) {
         const c = text[i];
-
-        if (c === '"') {
-            inQuotes = !inQuotes;
-        } else if (c === ',' && !inQuotes) {
-            row.push(value);
-            value = '';
-        } else if ((c === '\n' || c === '\r') && !inQuotes) {
-            if (row.length || value) {
-                row.push(value);
-                result.push(row);
-                row = [];
-                value = '';
-            }
-        } else {
-            value += c;
-        }
+        if (c === '"') inQuotes = !inQuotes;
+        else if (c === ',' && !inQuotes) { row.push(value); value = ''; }
+        else if ((c === '\n' || c === '\r') && !inQuotes) {
+            if (row.length || value) { row.push(value); result.push(row); row = []; value = ''; }
+        } else value += c;
     }
     return result;
 }
@@ -41,15 +29,22 @@ function clean(t) {
 function applySearch() {
     const q = document.getElementById('search').value.toLowerCase();
     currentPage = 1;
-
     filteredRows = q === ''
         ? rows
         : rows.filter(r => clean(r[0]).toLowerCase().indexOf(q) !== -1);
-
     render();
 }
 
 function render() {
+    // Sort alphabetically by file name
+    filteredRows.sort((a, b) => {
+        const nameA = clean(a[0]).toLowerCase();
+        const nameB = clean(b[0]).toLowerCase();
+        if (nameA < nameB) return -1;
+        if (nameA > nameB) return 1;
+        return 0;
+    });
+
     const start = (currentPage - 1) * perPage;
     const end = start + perPage;
     const slice = filteredRows.slice(start, end);
@@ -72,7 +67,6 @@ function renderPagination() {
     const pageCount = Math.ceil(filteredRows.length / perPage);
     const p = document.getElementById('pagination');
     p.innerHTML = '';
-
     if (pageCount <= 1) return;
 
     if (currentPage > 1) {
