@@ -5,25 +5,21 @@ Get-ChildItem *.jar | ForEach-Object {
     $img  = $name + ".jpg"
     $html = $name + ".html"
 
-    # URL-safe filename (PENTING!)
     $jarUrl = [uri]::EscapeDataString($jar)
     $imgUrl = [uri]::EscapeDataString($img)
 
-    # ukuran file
     $sizeBytes = $_.Length
     $sizeKB = [math]::Round($sizeBytes / 1KB, 2)
     $sizeMB = [math]::Round($sizeBytes / 1MB, 2)
 
-    # tanggal
     $modified = $_.LastWriteTime.ToString("dd MMM yyyy HH:mm")
 
-    # artwork + favicon
     if (Test-Path $img) {
         $favicon = "<link rel='icon' href='$imgUrl' type='image/jpeg'>"
-        $artwork = "<div class='artwork'><img src='$imgUrl' width='150px' alt='$name artwork'></div>"
+        $artwork = "<div class='artwork'><img src='$imgUrl' alt='$name'></div>"
     } else {
         $favicon = ""
-        $artwork = "<div style='text-align:center;color:#888'>No Artwork</div>"
+        $artwork = "<div class='noart'>No Artwork</div>"
     }
 
 @"
@@ -31,79 +27,120 @@ Get-ChildItem *.jar | ForEach-Object {
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>$name - ZainDir</title>
+<title>$name - ZainDir Java Game</title>
 
 $favicon
 
 <meta name="description" content="Download $name Java Game (.jar)">
 <meta name="robots" content="index,follow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-body {
-    background:#ffffff;
-    font-family:Tahoma,Arial,sans-serif;
-    font-size:12px;
-    color:#000;
-    margin:20px;
+*{margin:0;padding:0}
+
+body{
+    background:#cccccc;
+    font-family:Verdana,Arial,sans-serif;
+    font-size:14px;
+    color:#001C81;
+    max-width:600px;
+    margin:5px auto;
+    border:2px solid #A3BED6;
+    border-radius:5px;
+    box-shadow:2px 4px 15px #2E2F3E;
 }
-.container {
-    width:600px;
-    margin:auto;
-    border:1px solid #000;
+
+.wrapper{
+    background:#ffffff;
+    border-radius:5px;
+}
+
+/* HEADER */
+.header{
+    background:#003f88;
+    color:#fff;
+    padding:6px;
+    font-weight:bold;
+    text-shadow:1px 1px 2px #000;
+}
+
+/* TITLE */
+.title{
+    background:#356ba0;
+    color:#fff;
+    padding:5px;
+    font-weight:bold;
+    border-bottom:1px solid #5380AC;
+}
+
+/* ARTWORK */
+.artwork{
+    text-align:center;
     padding:10px;
 }
-h1 {
-    font-size:16px;
-    margin:0 0 10px 0;
-    text-align:center;
-}
-.artwork {
-    text-align:center;
-    margin-bottom:10px;
-}
-.artwork img {
-    max-width:100%;
+.artwork img{
+    max-width:150px;
     border:1px solid #666;
+    border-radius:4px;
 }
-.info {
-    background:#f4f4f4;
-    border:1px dashed #666;
+.noart{
+    text-align:center;
+    color:#888;
+    padding:10px;
+}
+
+/* INFO */
+.info{
+    background:#E6EAFF;
+    border:1px solid #C3CDDC;
+    margin:5px;
     padding:8px;
-    margin-bottom:10px;
+    font-size:13px;
 }
-.info b {
+.info b{
     display:inline-block;
     width:120px;
 }
-.download {
+
+/* DOWNLOAD */
+.download{
     text-align:center;
-    margin-top:15px;
+    margin:10px;
 }
-a.button {
+.download a{
     display:inline-block;
-    padding:6px 12px;
-    background:#0066cc;
+    background:#0f7f26;
     color:#fff;
+    padding:6px 14px;
     text-decoration:none;
-    border:1px solid #003366;
     font-weight:bold;
+    border-radius:4px;
 }
-a.button:hover {
-    background:#003366;
+.download a:hover{
+    background:#4c4c4c;
 }
-.footer {
+
+/* FOOTER */
+.footer{
+    background:#003f88;
+    color:#fff;
+    padding:6px;
+    font-size:12px;
     text-align:center;
-    font-size:11px;
-    margin-top:20px;
-    color:#555;
 }
 </style>
-
 </head>
-<body>
 
-<div class="container">
-<h1>$name</h1>
+<body>
+<div class="wrapper">
+
+<div class="header">
+    ZainDir :: Java Game Archive
+</div>
+
+<div class="title">
+    $name
+</div>
 
 $artwork
 
@@ -115,15 +152,15 @@ $artwork
 </div>
 
 <div class="download">
-<a class="button" href="$jarUrl">DOWNLOAD JAR</a>
+    <a href="$jarUrl">DOWNLOAD JAR</a>
 </div>
 
 <div class="footer">
-ZainDir © 2011 - 2025 Ari Project. All Rights Reserved.
+© 2011–2025 Ari Project<br>
+ZainDir Java Game Archive
 </div>
 
 </div>
-
 </body>
 </html>
 "@ | Set-Content $html -Encoding UTF8
