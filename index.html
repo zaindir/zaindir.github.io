@@ -9,60 +9,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-body {
-    background:#ffffff;
-    color:#000000;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:14px;
-}
-#container {
-    max-width: 960px;
-    margin: auto;
-}
-#header {
-    text-align: center;
-    margin-bottom: 10px;
-}
-#header img {
-    max-width: 100%;
-    height: auto;
-}
-h1 {
-    font-size:18px;
-    margin: 10px 0;
-}
-table {
-    width:100%;
-    border-collapse: collapse;
-}
-th {
-    text-align:left;
-    border-bottom:1px solid #000;
-    padding:4px;
-}
-td {
-    padding:4px;
-}
-a {
-    text-decoration:none;
-    color:#0000EE;
-}
-a:hover {
-    text-decoration:underline;
-}
-.footer {
-    font-size:12px;
-    color:#555;
-}
-.icon {
-    width:20px;
-    height:20px;
-}
+body { background:#fff; color:#000; font-family: Arial, Helvetica, sans-serif; font-size:14px; }
+#container { max-width: 960px; margin:auto; }
+#header { text-align:center; margin-bottom:10px; }
+#header img { max-width:100%; height:auto; }
+h1 { font-size:18px; margin:10px 0; }
+table { width:100%; border-collapse:collapse; }
+th { text-align:left; border-bottom:1px solid #000; padding:4px; }
+td { padding:4px; }
+a { text-decoration:none; color:#0000EE; }
+a:hover { text-decoration:underline; }
+.footer { font-size:12px; color:#555; }
+.icon { width:20px; height:20px; }
+#searchBox { margin-bottom:10px; padding:6px; width:100%; font-size:14px; }
 </style>
 </head>
 
 <body>
-
 <div id="container">
 
 <div id="header">
@@ -71,7 +34,9 @@ a:hover {
 
 <h1>Index of /</h1>
 
-<table>
+<input type="text" id="searchBox" placeholder="Search files or folders..." onkeyup="filterTable()">
+
+<table id="fileTable">
 <tr>
 <th class="icon"></th>
 <th>Name</th>
@@ -86,16 +51,31 @@ a:hover {
 <td><img src="/icon/folder.gif" class="icon" alt="Folder"></td>
 <td><a href="Archive%20002/">Archive 002/</a></td>
 <td>-</td>
-<td>12/26/2025 15:22:12</td>
+<td>12/26/2025 15:22:38</td>
 </tr></table>
 
-<hr>
+<script>
+function filterTable() {
+    var input = document.getElementById('searchBox');
+    var filter = input.value.toLowerCase();
+    var table = document.getElementById('fileTable');
+    var tr = table.getElementsByTagName('tr');
 
+    for (var i = 1; i < tr.length; i++) {
+        var tdName = tr[i].getElementsByTagName('td')[1];
+        if (tdName) {
+            var txtValue = tdName.textContent || tdName.innerText;
+            tr[i].style.display = txtValue.toLowerCase().indexOf(filter) > -1 ? '' : 'none';
+        }
+    }
+}
+</script>
+
+<hr>
 <div class="footer">
 ZainDir &copy; Classic Java Game Archive • Powered by Ari Project.
 </div>
 
 </div>
-
 </body>
 </html>
