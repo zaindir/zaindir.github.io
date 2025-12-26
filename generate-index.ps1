@@ -1,7 +1,8 @@
 ﻿$root = Get-Location
 
+# Folder dan file yang dikecualikan
 $excludeFolders = @("icon")
-$excludeFiles   = @("generate-index.ps1")
+$excludeFiles   = @("generate-index.ps1", "googlea503e79e4b70c07f.html", "404.html")
 
 function Size-Format($bytes) {
     if ($bytes -ge 1MB) { "{0:N2} MB" -f ($bytes / 1MB) }
@@ -27,9 +28,7 @@ function GenerateIndex($dir) {
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-
 <title>$title</title>
-
 <meta name="description" content="$description">
 <meta name="keywords" content="java games jar, sony ericsson games, java phone games, mobile jar games, zaindir github io">
 <meta name="robots" content="index, follow">
@@ -81,6 +80,10 @@ a:hover {
     font-size:12px;
     color:#555;
 }
+.icon {
+    width:20px;
+    height:20px;
+}
 </style>
 </head>
 
@@ -96,7 +99,7 @@ a:hover {
 
 <table>
 <tr>
-<th></th>
+<th class="icon"></th>
 <th>Name</th>
 <th>Size</th>
 <th>Last Modified</th>
@@ -106,7 +109,7 @@ a:hover {
     if ($dir.FullName -ne $root.Path) {
         $html += @"
 <tr>
-<td><img src="/icon/parent.gif" alt="Parent"></td>
+<td><img src="/icon/parent.gif" class="icon" alt="Parent"></td>
 <td><a href="../">Parent Directory</a></td>
 <td>-</td>
 <td>-</td>
@@ -123,7 +126,7 @@ a:hover {
         if ($item.PSIsContainer) {
             $html += @"
 <tr>
-<td><img src="/icon/folder.gif" alt="Folder"></td>
+<td><img src="/icon/folder.gif" class="icon" alt="Folder"></td>
 <td><a href="$url/">$($item.Name)/</a></td>
 <td>-</td>
 <td>$($item.LastWriteTime)</td>
@@ -133,7 +136,7 @@ a:hover {
             $size = Size-Format $item.Length
             $html += @"
 <tr>
-<td><img src="/icon/file.gif" alt="File"></td>
+<td><img src="/icon/file.gif" class="icon" alt="File"></td>
 <td><a href="$url">$($item.Name)</a></td>
 <td>$size</td>
 <td>$($item.LastWriteTime)</td>
