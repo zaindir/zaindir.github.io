@@ -1,15 +1,17 @@
 ﻿$root = Get-Location
 
+# Exclude
 $excludeFolders = @("icon")
-$excludeFiles = @(
+$excludeFiles   = @(
     "generate-index.ps1",
     "googlea503e79e4b70c07f.html",
     "404.html",
-    "index.html"
+    "index.html",
+    "file-index.js"
 )
 
-$globalFiles = @()
-$totalBytes = 0
+$global:AllFiles = @()
+$global:TotalBytes = 0
 
 function Size-Format($bytes) {
     if ($bytes -ge 1GB) { "{0:N2} GB" -f ($bytes / 1GB) }
@@ -18,112 +20,122 @@ function Size-Format($bytes) {
     else { "$bytes B" }
 }
 
-function Get-Icon($name) {
-    switch ([System.IO.Path]::GetExtension($name).ToLower()) {
-        ".jar" { "jar.gif" }
-        ".zip" { "zip.gif" }
-        ".rar" { "rar.gif" }
-        default { "file.gif" }
+function GenerateIndex($dir) {
+
+    $items = Get-ChildItem $dir | Where-Object {
+        -not ($_.PSIsContainer -and $excludeFolders -contains $_.Name) -and
+        -not (-not $_.PSIsContainer -and $excludeFiles -contains $_.Name)
     }
-}
 
-# ===== SCAN ALL FILES =====
-Get-ChildItem $root -Recurse -File | Where-Object {
-    -not ($excludeFiles -contains $_.Name) -and
-    -not ($excludeFolders -contains $_.Directory.Name)
-} | ForEach-Object {
+    $rel = $dir.FullName.Replace($root.Path, "").Replace("\","/")
+    if ($rel -eq "") { $rel = "/" }
 
-    $relPath = $_.FullName.Replace($root.Path,"").Replace("\","/")
-    $globalFiles += @{
-        name = $_.Name
-        path = $relPath
-        size = Size-Format $_.Length
-        bytes = $_.Length
-        icon = Get-Icon $_.Name
+    foreach ($f in $items | Where-Object { -not $_.PSIsContainer }) {
+        $path = ($rel.TrimEnd("/") + "/" + $f.Name).Replace("//","/")
+        $global:AllFiles += @{
+            name = $f.Name
+            path = $path
+            size = Size-Format $f.Length
+        }
+        $global:TotalBytes += $f.Length
     }
-    $totalBytes += $_.Length
-}
 
-$totalSize = Size-Format $totalBytes
-
-# ===== HOMEPAGE =====
-$json = $globalFiles | ConvertTo-Json -Compress
-
-$homeHtml = @"
+    $html = @"
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>ZainDir - Java Game JAR Archive</title>
-<meta name="description" content="ZainDir is a classic Java JAR game archive. Download free Java games for Sony Ericsson and Java phones.">
-<meta name="robots" content="index,follow">
+<title>ZainDir - Java Game JAR Archive $rel</title>
+<meta name="description" content="ZainDir is a classic Java JAR game archive. Download free Java games for Sony Ericsson and Java phones. Directory: $rel">
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-body { font-family:Arial; font-size:13px; background:#fff; }
-h1 { font-size:16px; }
-input { width:100%; padding:5px; font-size:13px; }
+body { background:#fff; font-family:Arial; font-size:14px; }
+#container { max-width:960px; margin:auto; }
+#header img { max-width:100%; }
+h1 { font-size:18px; }
 table { width:100%; border-collapse:collapse; }
-th { border-bottom:1px solid #000; text-align:left; }
+th { text-align:left; border-bottom:1px solid #000; }
 td { padding:4px; }
-.page a { margin:0 3px; cursor:pointer; }
+a { color:#0000EE; text-decoration:none; }
+a:hover { text-decoration:underline; }
+.footer { font-size:12px; color:#555; }
+#searchBox { width:100%; padding:6px; margin:8px 0; }
 </style>
 </head>
 
 <body>
-<img src="/icon/header.gif"><br>
+<div id="container">
 
-<h1>Global Java Game Search</h1>
+<div id="header">
+<img src="/icon/header.gif" alt="ZainDir Java Game Archive">
+</div>
 
-<input type="text" id="q" placeholder="Search JAR / ZIP / RAR files..." onkeyup="search()">
+<h1>Index of $rel</h1>
+"@
 
-<table id="list">
-<tr><th></th><th>File</th><th>Size</th></tr>
-</table>
-
-<div class="page" id="pages"></div>
-
-<hr>
-Total Archive Size: $totalSize<br>
-ZainDir © Classic Java Game Archive
+    if ($dir.FullName -eq $root.Path) {
+        $html += @"
+<input type="text" id="searchBox" placeholder="Search files only (global)...">
+<div id="searchResults"></div>
+<script src="/file-index.js"></script>
 <script>
-var files = $json;
-var perPage = 50;
-var current = 1;
+const box = document.getElementById('searchBox');
+const res = document.getElementById('searchResults');
 
-function search(){
- current=1;
- render();
-}
-
-function render(){
- var q=document.getElementById('q').value.toLowerCase();
- var filtered = files.filter(f=>f.name.toLowerCase().includes(q));
- var table=document.getElementById('list');
- table.innerHTML='<tr><th></th><th>File</th><th>Size</th></tr>';
- var start=(current-1)*perPage;
- filtered.slice(start,start+perPage).forEach(f=>{
-   table.innerHTML+=`<tr>
-<td><img src="/icon/${f.icon}"></td>
-<td><a href="${f.path}">${f.name}</a></td>
-<td>${f.size}</td>
-</tr>`;
- });
- pages(filtered.length);
-}
-
-function pages(total){
- var p=document.getElementById('pages');
- p.innerHTML='';
- var max=Math.ceil(total/perPage);
- for(let i=1;i<=max;i++){
-  p.innerHTML+=`<a onclick="current=${i};render()">${i}</a>`;
- }
-}
-
-render();
+box.addEventListener('keyup', function(){
+  let q = this.value.toLowerCase();
+  if (q.length < 2) { res.innerHTML = ''; return; }
+  let out = '<ul>';
+  files.filter(f => f.name.toLowerCase().includes(q))
+       .slice(0,50)
+       .forEach(f => {
+          out += `<li><a href="${f.path}">${f.name}</a> (${f.size})</li>`;
+       });
+  out += '</ul>';
+  res.innerHTML = out;
+});
 </script>
+"@
+    }
+
+    $html += @"
+<table>
+<tr><th>Name</th><th>Size</th></tr>
+"@
+
+    foreach ($item in $items | Sort-Object @{Expression="PSIsContainer";Descending=$true}, Name) {
+
+        if ($item.PSIsContainer) {
+            $html += "<tr><td><a href='$($item.Name)/'>$($item.Name)/</a></td><td>-</td></tr>"
+        } else {
+            $html += "<tr><td><a href='$($item.Name)'>$($item.Name)</a></td><td>$(Size-Format $item.Length)</td></tr>"
+        }
+    }
+
+    $html += @"
+</table>
+<hr>
+<div class="footer">
+ZainDir © Java Game Archive • Total storage used: $(Size-Format $global:TotalBytes)
+</div>
+</div>
 </body>
 </html>
 "@
 
-$homeHtml | Set-Content -Encoding UTF8 (Join-Path $root "index.html")
+    $html | Set-Content -Encoding UTF8 (Join-Path $dir.FullName "index.html")
+
+    foreach ($sub in Get-ChildItem $dir -Directory | Where-Object {
+        -not ($excludeFolders -contains $_.Name)
+    }) {
+        GenerateIndex $sub
+    }
+}
+
+GenerateIndex (Get-Item $root.Path)
+
+# Generate file-index.js
+$js = "var files = " + ($global:AllFiles | ConvertTo-Json -Depth 5) + ";"
+$js | Set-Content -Encoding UTF8 (Join-Path $root.Path "file-index.js")
