@@ -41,6 +41,9 @@ body {
   margin:20px;
 }
 
+#header { text-align:center; margin-bottom:10px; }
+#header img { max-width:100%; height:auto; }
+
 h1 {
   font-size:16px;
   border-bottom:1px solid #c0c0c0;
@@ -81,7 +84,6 @@ a:hover {
   text-decoration:underline;
 }
 
-/* ===== CHROME ICON ===== */
 a.icon {
   padding-left:20px;
   background-repeat:no-repeat;
@@ -107,13 +109,27 @@ a.up {
   border-top:1px solid #c0c0c0;
   padding-top:6px;
 }
+
+#searchBox {
+  margin:10px 0;
+  padding:6px;
+  width:100%;
+  font-size:13px;
+}
 </style>
 </head>
 
 <body>
+
+<div id="header">
+    <img src="icon/header.gif" alt="ZainDir - Java Game Archive">
+</div>
+
 <h1>Index of $rel</h1>
 
-<table>
+<input type="text" id="searchBox" placeholder="Search files or folders..." onkeyup="filterTable()">
+
+<table id="fileTable">
 <tr>
   <th>Name</th>
   <th class="size">Size</th>
@@ -124,9 +140,9 @@ a.up {
     if ($dir.FullName -ne $root.Path) {
         $html += @"
 <tr>
-  <td><a href="../" class="icon up">Parent Directory</a></td>
-  <td class="size">-</td>
-  <td class="date">-</td>
+  <td><a href='../' class='icon up'>Parent Directory</a></td>
+  <td class='size'>-</td>
+  <td class='date'>-</td>
 </tr>
 "@
     }
@@ -138,18 +154,18 @@ a.up {
         if ($item.PSIsContainer) {
             $html += @"
 <tr>
-  <td><a href="$url/" class="icon dir">$($item.Name)/</a></td>
-  <td class="size">-</td>
-  <td class="date">$($item.LastWriteTime)</td>
+  <td><a href='$url/' class='icon dir'>$($item.Name)/</a></td>
+  <td class='size'>-</td>
+  <td class='date'>$($item.LastWriteTime)</td>
 </tr>
 "@
         } else {
             $size = Size-Format $item.Length
             $html += @"
 <tr>
-  <td><a href="$url" class="icon file">$($item.Name)</a></td>
-  <td class="size">$size</td>
-  <td class="date">$($item.LastWriteTime)</td>
+  <td><a href='$url' class='icon file'>$($item.Name)</a></td>
+  <td class='size'>$size</td>
+  <td class='date'>$($item.LastWriteTime)</td>
 </tr>
 "@
         }
@@ -158,9 +174,23 @@ a.up {
 $html += @"
 </table>
 
+<script>
+function filterTable() {
+    var input = document.getElementById('searchBox');
+    var filter = input.value.toLowerCase();
+    var table = document.getElementById('fileTable');
+    var tr = table.getElementsByTagName('tr');
+    for (var i = 1; i < tr.length; i++) {
+        var td = tr[i].getElementsByTagName('td')[0];
+        if (td) {
+            tr[i].style.display = td.innerText.toLowerCase().indexOf(filter) > -1 ? '' : 'none';
+        }
+    }
+}
+</script>
+
 <div class="footer">
-Index of $rel<br>
-ZainDir © Classic Java Game Archive
+ZainDir &copy; Classic Java Game Archive • Powered by Ari Project. | <i>Apache/2.4.41 (Ubuntu) Server/ Npap.c at www.zaindir.github.io port 443</i>
 </div>
 
 </body>
