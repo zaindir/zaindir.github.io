@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ZainDir - Java Game JAR Archive</title>
+
+<script>
+const files = ;
+
+function searchFiles() {
+    let q = document.getElementById('search').value.toLowerCase();
+    let out = document.getElementById('result');
+    out.innerHTML = '';
+
+    files.filter(f => f.name.toLowerCase().includes(q)).forEach(f => {
+        out.innerHTML += '<li><a href="'+f.path+'">'+f.name+'</a> ('+f.size+')</li>';
+    });
+}
+</script>
+</head>
+
+<body>
+<h1>ZainDir Global File Search</h1>
+<input type="text" id="search" onkeyup="searchFiles()" placeholder="Search Java game files...">
+<ul id="result"></ul>
+
+<hr>
+Total storage used: 0 B
+</body>
+</html>

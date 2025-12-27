@@ -1,153 +1,129 @@
 ﻿$root = Get-Location
 
-# Folder dan file yang dikecualikan
 $excludeFolders = @("icon")
-$excludeFiles   = @("generate-index.ps1", "googlea503e79e4b70c07f.html", "404.html")
+$excludeFiles = @(
+    "generate-index.ps1",
+    "googlea503e79e4b70c07f.html",
+    "404.html",
+    "index.html"
+)
+
+$globalFiles = @()
+$totalBytes = 0
 
 function Size-Format($bytes) {
-    if ($bytes -ge 1MB) { "{0:N2} MB" -f ($bytes / 1MB) }
+    if ($bytes -ge 1GB) { "{0:N2} GB" -f ($bytes / 1GB) }
+    elseif ($bytes -ge 1MB) { "{0:N2} MB" -f ($bytes / 1MB) }
     elseif ($bytes -ge 1KB) { "{0:N2} KB" -f ($bytes / 1KB) }
     else { "$bytes B" }
 }
 
-function GenerateIndex($dir) {
-
-    $items = Get-ChildItem $dir | Where-Object {
-        -not ($_.PSIsContainer -and $excludeFolders -contains $_.Name) -and
-        -not (-not $_.PSIsContainer -and $excludeFiles -contains $_.Name)
+function Get-Icon($name) {
+    switch ([System.IO.Path]::GetExtension($name).ToLower()) {
+        ".jar" { "jar.gif" }
+        ".zip" { "zip.gif" }
+        ".rar" { "rar.gif" }
+        default { "file.gif" }
     }
+}
 
-    $rel = $dir.FullName.Replace($root.Path, "").Replace("\","/")
-    if ($rel -eq "") { $rel = "/" }
+# ===== SCAN ALL FILES =====
+Get-ChildItem $root -Recurse -File | Where-Object {
+    -not ($excludeFiles -contains $_.Name) -and
+    -not ($excludeFolders -contains $_.Directory.Name)
+} | ForEach-Object {
 
-    $title = "ZainDir - Java Game JAR Archive $rel"
-    $description = "ZainDir is a classic Java JAR game archive. Download free Java games for Sony Ericsson and other Java phones. Directory: $rel"
+    $relPath = $_.FullName.Replace($root.Path,"").Replace("\","/")
+    $globalFiles += @{
+        name = $_.Name
+        path = $relPath
+        size = Size-Format $_.Length
+        bytes = $_.Length
+        icon = Get-Icon $_.Name
+    }
+    $totalBytes += $_.Length
+}
 
-    $html = @"
+$totalSize = Size-Format $totalBytes
+
+# ===== HOMEPAGE =====
+$json = $globalFiles | ConvertTo-Json -Compress
+
+$homeHtml = @"
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
-<title>$title</title>
-<meta name="description" content="$description">
-<meta name="keywords" content="java games jar, sony ericsson games, java phone games, mobile jar games, zaindir github io">
-<meta name="robots" content="index, follow">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZainDir - Java Game JAR Archive</title>
+<meta name="description" content="ZainDir is a classic Java JAR game archive. Download free Java games for Sony Ericsson and Java phones.">
+<meta name="robots" content="index,follow">
 
 <style>
-body { background:#fff; color:#000; font-family: Arial, Helvetica, sans-serif; font-size:14px; }
-#container { max-width: 960px; margin:auto; }
-#header { text-align:center; margin-bottom:10px; }
-#header img { max-width:100%; height:auto; }
-h1 { font-size:18px; margin:10px 0; }
+body { font-family:Arial; font-size:13px; background:#fff; }
+h1 { font-size:16px; }
+input { width:100%; padding:5px; font-size:13px; }
 table { width:100%; border-collapse:collapse; }
-th { text-align:left; border-bottom:1px solid #000; padding:4px; }
+th { border-bottom:1px solid #000; text-align:left; }
 td { padding:4px; }
-a { text-decoration:none; color:#0000EE; }
-a:hover { text-decoration:underline; }
-.footer { font-size:12px; color:#555; }
-.icon { width:20px; height:20px; }
-#searchBox { margin-bottom:10px; padding:6px; width:100%; font-size:14px; }
+.page a { margin:0 3px; cursor:pointer; }
 </style>
 </head>
 
 <body>
-<div id="container">
+<img src="/icon/header.gif"><br>
 
-<div id="header">
-    <img src="/icon/header.gif" alt="ZainDir - Java Game Archive">
-</div>
+<h1>Global Java Game Search</h1>
 
-<h1>Index of $rel</h1>
+<input type="text" id="q" placeholder="Search JAR / ZIP / RAR files..." onkeyup="search()">
 
-<input type="text" id="searchBox" placeholder="Search files or folders..." onkeyup="filterTable()">
-
-<table id="fileTable">
-<tr>
-<th class="icon"></th>
-<th>Name</th>
-<th>Size</th>
-<th>Last Modified</th>
-</tr>
-"@
-
-    if ($dir.FullName -ne $root.Path) {
-        $html += @"
-<tr>
-<td><img src="/icon/parent.gif" class="icon" alt="Parent"></td>
-<td><a href="../">Parent Directory</a></td>
-<td>-</td>
-<td>-</td>
-</tr>
-"@
-    }
-
-    foreach ($item in $items | Sort-Object @{Expression="PSIsContainer";Descending=$true}, Name) {
-
-        if ($item.Name -eq "index.html") { continue }
-
-        $url = [uri]::EscapeUriString($item.Name)
-
-        if ($item.PSIsContainer) {
-            $html += @"
-<tr>
-<td><img src="/icon/folder.gif" class="icon" alt="Folder"></td>
-<td><a href="$url/">$($item.Name)/</a></td>
-<td>-</td>
-<td>$($item.LastWriteTime)</td>
-</tr>
-"@
-        } else {
-            $size = Size-Format $item.Length
-            $html += @"
-<tr>
-<td><img src="/icon/file.gif" class="icon" alt="File"></td>
-<td><a href="$url">$($item.Name)</a></td>
-<td>$size</td>
-<td>$($item.LastWriteTime)</td>
-</tr>
-"@
-        }
-    }
-
-    # Tambahkan JavaScript filter
-    $html += @"
+<table id="list">
+<tr><th></th><th>File</th><th>Size</th></tr>
 </table>
 
-<script>
-function filterTable() {
-    var input = document.getElementById('searchBox');
-    var filter = input.value.toLowerCase();
-    var table = document.getElementById('fileTable');
-    var tr = table.getElementsByTagName('tr');
-
-    for (var i = 1; i < tr.length; i++) {
-        var tdName = tr[i].getElementsByTagName('td')[1];
-        if (tdName) {
-            var txtValue = tdName.textContent || tdName.innerText;
-            tr[i].style.display = txtValue.toLowerCase().indexOf(filter) > -1 ? '' : 'none';
-        }
-    }
-}
-</script>
+<div class="page" id="pages"></div>
 
 <hr>
-<div class="footer">
-ZainDir &copy; Classic Java Game Archive • Powered by Ari Project.
-</div>
+Total Archive Size: $totalSize<br>
+ZainDir © Classic Java Game Archive
+<script>
+var files = $json;
+var perPage = 50;
+var current = 1;
 
-</div>
+function search(){
+ current=1;
+ render();
+}
+
+function render(){
+ var q=document.getElementById('q').value.toLowerCase();
+ var filtered = files.filter(f=>f.name.toLowerCase().includes(q));
+ var table=document.getElementById('list');
+ table.innerHTML='<tr><th></th><th>File</th><th>Size</th></tr>';
+ var start=(current-1)*perPage;
+ filtered.slice(start,start+perPage).forEach(f=>{
+   table.innerHTML+=`<tr>
+<td><img src="/icon/${f.icon}"></td>
+<td><a href="${f.path}">${f.name}</a></td>
+<td>${f.size}</td>
+</tr>`;
+ });
+ pages(filtered.length);
+}
+
+function pages(total){
+ var p=document.getElementById('pages');
+ p.innerHTML='';
+ var max=Math.ceil(total/perPage);
+ for(let i=1;i<=max;i++){
+  p.innerHTML+=`<a onclick="current=${i};render()">${i}</a>`;
+ }
+}
+
+render();
+</script>
 </body>
 </html>
 "@
 
-    $html | Set-Content -Encoding UTF8 (Join-Path $dir.FullName "index.html")
-
-    foreach ($sub in Get-ChildItem $dir -Directory | Where-Object {
-        -not ($excludeFolders -contains $_.Name)
-    }) {
-        GenerateIndex $sub
-    }
-}
-
-GenerateIndex (Get-Item $root.Path)
+$homeHtml | Set-Content -Encoding UTF8 (Join-Path $root "index.html")
