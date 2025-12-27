@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.3//EN" "http://www.wapforum.org/DTD/wml13.dtd"><wml>
+<card id="main" title="404 Страница не найдена">
+<do type="prev" label="Back"><prev/></do><p align="center">
+404 Сайт или страница не найдена!<br/>
+Site or page not found!
+
+</p><p align="center">
+Вы можете найти у нас:<br/>
+<a href="http://wap.1124.ru/catalog/4873458169/game1/">Бесплатный каталог Java-игр</a><br/>
+<a href="http://wap.1124.ru/partner/4873458169/mp3/">Мелодии MP3/AMR</a><br/>
+<a href="http://wap.1124.ru/demo/4873458169/">Бесплатные ДЕМО-игры</a><br/>
+<a href="http://wap.1124.ru/partner/4873458169/polyphone/">Полифония MIDI и MMF</a><br/>
+<a href="http://wap.1124.ru/partner/4873458169/theme/">Темы для Обоев</a><br/>
+<a href="http://wap.1124.ru/partner/4873458169/video/">Видео-клубничка</a><br/>
+<BR/>
+------------<BR/>
+<A HREF="http://wen.ru/">WEN.RU HTTPD 3.2</A>
+
+</p></card></wml>
